@@ -1,0 +1,615 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed',
+    sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* container  */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* small */
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium */
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+
+  }
+}
+
+/* large */
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+body {
+  background-color: #edf2f8;
+}
+
+header {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+header img {
+
+  width: 40px;
+  border-radius: 50%;
+}
+
+.content {
+  margin: 25px;
+}
+
+header .paragraph {
+  transform: translateY(5px);
+}
+
+.Kira .content p,
+.Jeanette .content p {
+  color: #7b7f80;
+}
+
+.amr-image {
+  display: none;
+  transition: 0.4s;
+  order: 1;
+  border-radius: 10px;
+}
+
+.amr-image img {
+  border-radius: 10px;
+}
+
+.testimonials>div {
+  border-radius: 10px;
+  color: white;
+}
+
+.testimonials div h2 {
+  font-size: 14px;
+
+}
+
+.testimonials div h3 {
+  font-weight: normal;
+  font-size: 13px;
+  color: #86878c;
+}
+
+.testimonials div h4 {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.testimonials div p {
+  font-size: 14px;
+  color: #c5ccdc
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.testimonials {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 30px;
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 auto;
+}
+
+.Kira .paragraph,
+.Jeanette .paragraph {
+  color: black;
+  transform: translateY(5px);
+}
+
+.testimonials .daniel {
+  order: -1;
+  grid-column: span 2;
+
+  background-color: #733fc8;
+
+}
+
+
+
+
+.testimonials .Jonathan {
+  order: -1;
+
+  background-color: #49556b;
+}
+
+
+.testimonials .Jeanette {
+  order: 1;
+  background-color: white;
+}
+
+
+
+.testimonials .Patrick {
+  order: 1;
+  grid-column: span 2;
+  background-color: #18202d;
+}
+
+
+
+.testimonials .Kira {
+  grid-row: span 2;
+  order: 0;
+  background-color: white;
+  color: black;
+}
+
+.testimonials .Kira .content,
+.testimonials .Jeanette .content {
+  color: black;
+}
+
+/* medium screen  */
+
+
+
+@media (min-width:992px) and (max-width:1200px) {
+  body {
+    background-color: #edf2f8;
+  }
+
+  header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .amr-image {
+    display: block;
+    transition: 0.4s;
+    order: 1;
+    border-radius: 10px;
+  }
+
+  .amr-image img {
+    border-radius: 10px;
+  }
+
+  header img {
+
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .content {
+    margin: 25px;
+  }
+
+  header .paragraph {
+    transform: translateY(5px);
+  }
+
+  .Kira .content p,
+  .Jeanette .content p {
+    color: #7b7f80;
+  }
+
+  .testimonials>div {
+    border-radius: 10px;
+    color: white;
+  }
+
+  .testimonials div h2 {
+    font-size: 14px;
+
+  }
+
+  .testimonials div h3 {
+    font-weight: normal;
+    font-size: 13px;
+    color: #86878c;
+  }
+
+  .testimonials div h4 {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .testimonials div p {
+    font-size: 14px;
+    color: #c5ccdc
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .testimonials {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+    gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 70px auto;
+  }
+
+  .Kira .paragraph,
+  .Jeanette .paragraph {
+    color: black;
+    transform: translateY(5px);
+  }
+
+  .testimonials .daniel {
+    order: -1;
+    grid-column: span 2;
+
+    background-color: #733fc8;
+
+  }
+
+
+
+
+  .testimonials .Jonathan {
+    order: -1;
+
+    background-color: #49556b;
+  }
+
+
+  .testimonials .Jeanette {
+    order: 1;
+    background-color: white;
+  }
+
+
+
+  .testimonials .Patrick {
+    order: 1;
+    grid-column: span 2;
+    background-color: #18202d;
+  }
+
+
+
+  .testimonials .Kira {
+    grid-row: span 2;
+    order: 0;
+    background-color: white;
+    color: black;
+  }
+
+  .testimonials .Kira .content,
+  .testimonials .Jeanette .content {
+    color: black;
+  }
+}
+
+/* small screens  */
+@media (min-width:767px) and (max-width:991px) {
+  body {
+    background-color: #edf2f8;
+  }
+
+  header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .amr-image {
+    display: none;
+    transition: 0.4s;
+    order: 1;
+    border-radius: 10px;
+  }
+
+  .amr-image img {
+    border-radius: 10px;
+  }
+
+  header img {
+
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .content {
+    margin: 25px;
+  }
+
+  header .paragraph {
+    transform: translateY(5px);
+  }
+
+  .Kira .content p,
+  .Jeanette .content p {
+    color: #7b7f80;
+  }
+
+  .testimonials>div {
+    border-radius: 10px;
+    color: white;
+  }
+
+  .testimonials div h2 {
+    font-size: 14px;
+
+  }
+
+  .testimonials div h3 {
+    font-weight: normal;
+    font-size: 13px;
+    color: #86878c;
+  }
+
+  .testimonials div h4 {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .testimonials div p {
+    font-size: 14px;
+    color: #c5ccdc
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .testimonials {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+    gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 70px auto;
+  }
+
+  .Kira .paragraph,
+  .Jeanette .paragraph {
+    color: black;
+    transform: translateY(5px);
+  }
+
+  .testimonials .daniel {
+    order: -1;
+    grid-column: span 2;
+
+    background-color: #733fc8;
+
+  }
+
+
+
+
+  .testimonials .Jonathan {
+    order: -1;
+
+    background-color: #49556b;
+  }
+
+
+  .testimonials .Jeanette {
+    order: 1;
+    background-color: white;
+  }
+
+
+
+  .testimonials .Patrick {
+    order: 1;
+    grid-column: span 2;
+    background-color: #18202d;
+  }
+
+
+
+  .testimonials .Kira {
+    grid-row: span 2;
+    order: 0;
+    background-color: white;
+    color: black;
+  }
+
+  .testimonials .Kira .content,
+  .testimonials .Jeanette .content {
+    color: black;
+  }
+}
+
+
+
+
+
+/* mopile  */
+@media (max-width:766px) {
+  body {
+    background-color: #edf2f8;
+  }
+
+  header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .amr-image {
+    display: none;
+    transition: 0.4s;
+    order: 1;
+    border-radius: 10px;
+  }
+
+  .amr-image img {
+    border-radius: 10px;
+  }
+
+  header img {
+
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .content {
+    margin: 25px;
+  }
+
+  header .paragraph {
+    transform: translateY(5px);
+  }
+
+  .Kira .content p,
+  .Jeanette .content p {
+    color: #7b7f80;
+  }
+
+  .testimonials>div {
+    border-radius: 10px;
+    color: white;
+  }
+
+  .testimonials div h2 {
+    font-size: 14px;
+
+  }
+
+  .testimonials div h3 {
+    font-weight: normal;
+    font-size: 13px;
+    color: #86878c;
+  }
+
+  .testimonials div h4 {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .testimonials div p {
+    font-size: 14px;
+    color: #c5ccdc
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .testimonials {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    grid-template-rows: auto;
+    margin: 70px auto;
+  }
+
+  .Kira .paragraph,
+  .Jeanette .paragraph {
+    color: black;
+    transform: translateY(5px);
+  }
+
+  .testimonials .daniel {
+    order: 0;
+    grid-column: span 1;
+    max-width: 350px;
+    background-color: #733fc8;
+    margin: 0 auto;
+  }
+
+
+
+
+  .testimonials .Jonathan {
+    order: 0;
+    max-width: 350px;
+    margin: 0 auto;
+    background-color: #49556b;
+    height: fit-content;
+  }
+
+
+  .testimonials .Jeanette {
+    order: 0;
+    background-color: white;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+
+
+  .testimonials .Patrick {
+    order: 0;
+    grid-column: span 1;
+    background-color: #18202d;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+
+
+  .testimonials .Kira {
+    grid-row: span 1;
+    order: 0;
+    background-color: white;
+    color: black;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .testimonials .Kira .content,
+  .testimonials .Jeanette .content {
+    color: black;
+  }
+}
